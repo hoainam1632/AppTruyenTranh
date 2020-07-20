@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchActivity"
+    android:orientation="vertical">
+  <LinearLayout
+      android:weightSum="3"
+      android:layout_width="match_parent"
+      android:layout_height="50dp">
+    <Button
+        android:id="@+id/btn_home_search"
+        android:background="@color/color_btn_menu"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/ic_home"
+        android:text="Home"
+        android:onClick="HomeActivity"/>
+    <Button
+        android:id="@+id/btn_category_search"
+        android:background="@color/color_btn_menu"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:drawableTop="@drawable/ic_view_list"
+        android:layout_height="wrap_content"
+        android:text="Cate"
+        android:onClick="Category"/>
+    <Button
+        android:id="@+id/btn_search_cate"
+        android:background="@color/color_btn_menu"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/ic_search"
+        android:text="Search"/>
+  </LinearLayout>
+  <EditText
+      android:id="@+id/edit_search"
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:hint="Nhập tên truyện"/>
+  <LinearLayout
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RCV_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+  </LinearLayout>
+
+</LinearLayout>

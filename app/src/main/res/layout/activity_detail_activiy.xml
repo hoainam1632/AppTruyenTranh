@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+  <LinearLayout
+      android:background="@drawable/silebar"
+      android:layout_width="match_parent"
+      android:layout_height="40dp"
+      android:orientation="horizontal">
+      <Button
+          android:id="@+id/btn_back_detail"
+          android:layout_width="40dp"
+          android:layout_height="match_parent"
+          android:background="@drawable/ic_arrow_back_24dp"
+          android:onClick="BackHome"/>
+      <TextView
+          android:id="@+id/txt_title_detail"
+          android:textColor="#F6E869"
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:text="Sword art online"
+          android:textStyle="bold"
+          android:textSize="25sp"
+          android:gravity="center_vertical"/>
+  </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:id="@+id/img_detail"
+            android:src="@drawable/intro" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/txtnameTitle_detail"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tên truyện:"
+                android:textStyle="bold"
+                android:textSize="30sp" />
+            <TextView
+                android:id="@+id/txtname_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sword art onlinne"
+                android:textColor="#750505"
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/txtAuthorTitle_detail"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tác giả:"
+                android:textStyle="bold"
+                android:textSize="30sp"/>
+            <TextView
+                android:id="@+id/txtAuthor_detail"
+                android:textColor="#491403"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="KaKaShi"
+                android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/txt_updated_detail"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cập nhật :"
+                android:textStyle="bold"
+                android:textSize="30sp"/>
+            <TextView
+                android:id="@+id/txt_datetime_detail"
+                android:textColor="#491403"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20/03/2020"
+                android:textSize="20dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/chapterTitle_detail"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chapter"
+            android:textStyle="bold"
+            android:textSize="30sp"/>
+        <View
+            android:id="@+id/view"
+            android:layout_width="0dp"
+            android:layout_height="6dp"
+            android:layout_weight="2"
+            android:layout_gravity="center_vertical"
+            android:background="#E49521"/>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcvDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
